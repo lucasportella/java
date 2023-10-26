@@ -10,5 +10,6 @@ public static void main(String[] args) {
     System.out.println("Which percentage to increase salary?");
     employee1.IncreaseSalary(sc.nextDouble());
     employee1.PrintEmployee();
+    sc.close();
 }
 }

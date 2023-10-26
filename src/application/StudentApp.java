@@ -10,5 +10,6 @@ public class StudentApp {
         System.out.println("Insert student data:");
         Student John = new Student(sc.nextLine(), sc.nextDouble(), sc.nextDouble(), sc.nextDouble());
         John.displayFinalResult();
+        sc.close();
     }
 }

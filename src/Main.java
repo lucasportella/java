@@ -12,6 +12,7 @@ public class Main {
             System.out.println((9 * temp / 5) + 32);
             System.out.print("Deseja repetir (s/n)? ");
             repeat_string = sc.next();
+            sc.close();
         } while (Objects.equals(repeat_string,"s") || Objects.equals(repeat_string, "sim"));
 funcao("robert");
     }
