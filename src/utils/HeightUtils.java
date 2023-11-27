@@ -13,21 +13,13 @@ public class HeightUtils {
     }
     public static double calculateMinorsPercentage(Person[] personVector) {
         int minorsQuantity = 0;
-
-        for (int c = 0; c < personVector.length; c++) {
-            if (personVector[c].age < 16) {
+        for (int d = 0; d < personVector.length; d++) {
+            if (personVector[d].age < 16) {
                 minorsQuantity += 1;
             }
 
         }
-        String[] minors = new String[minorsQuantity];
-        for (int c = 0; c < personVector.length; c++) {
-            if (personVector[c].age < 16) {
-                minors[c] = personVector[c].name;
-            }
-        }
         return  ((double) minorsQuantity * 100) / personVector.length;
-
     }
 
 }

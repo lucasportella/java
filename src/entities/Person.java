@@ -11,4 +11,9 @@ public class Person {
         this.height = height;
     }
 
+    public String toString() {
+        return "Name: " + this.name + ", Age: " + this.age + ", Height: " + this.height;
+    }
+
+
 }
