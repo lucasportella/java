@@ -18,15 +18,15 @@ public class HeightProblem {
          int age = sc.nextInt();
          System.out.print("Height: ");
          double height = sc.nextDouble();
+         sc.nextLine(); // Consume the newline character
          Person person = new Person(name, age, height);
          personVector[c] = person;
      }
      sc.close();
-     System.out.println(personVector[0].toString() );
     for (int c =0; c < personVector.length; c++) {
         System.out.println(personVector[c].toString() );
     }
-     System.out.printf("Minors percentage: %.2f\n", HeightUtils.calculateMinorsPercentage(personVector));
+     System.out.printf("Minors percentage: %.2f%%\n", HeightUtils.calculateMinorsPercentage(personVector));
      System.out.printf("Average height: %.2f", HeightUtils.calculateAverageHeight(personVector));
  }
 
